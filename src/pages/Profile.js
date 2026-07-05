@@ -1,10 +1,12 @@
 // src/pages/Profile.js
 import React, { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import './Pages.css';
 import './ProfilePage.css';
 
 const Profile = () => {
+  const navigate = useNavigate();
   // Tabs management
   const [activeTab, setActiveTab] = useState('profile');
 
@@ -569,7 +571,7 @@ const Profile = () => {
                   <div className="empty-icon">📋</div>
                   <h3>No Adoption Requests Yet</h3>
                   <p>You haven't made any adoption requests yet. Browse our available pets to find your perfect companion!</p>
-                  <button className="browse-pets-button" onClick={() => window.location.href = '/available-pets'}>Browse Pets</button>
+                  <button className="browse-pets-button" onClick={() => navigate('/available-pets')}>Browse Pets</button>
                 </motion.div>
               )}
             </motion.div>

@@ -11,7 +11,7 @@ import pawImage from '../media/LandingPage/paw1.png'; // Keep local paw image
 const catImage = 'https://images.unsplash.com/photo-1592194996308-7b43878e84a6?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80';
 const dogImage = 'https://images.unsplash.com/photo-1587300003388-59208cc962cb?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80';
 const birdImage = 'https://images.unsplash.com/photo-1552728089-57bdde30beb3?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80';
-const reptileImage = 'https://images.unsplash.com/photo-1578632749014-ca7715ff6357?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80';
+const reptileImage = 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Bartagame_%28fcm%29.jpg/960px-Bartagame_%28fcm%29.jpg';
 const otherImage = 'https://images.unsplash.com/photo-1535930891776-0c2dfb7fda1a?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80';
 
 const AvailablePets = () => {
@@ -59,7 +59,7 @@ const AvailablePets = () => {
     },
     {
       type: 'Reptiles',
-      image: reptileImage || 'https://images.unsplash.com/photo-1578632749014-ca7715ff6357?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
+      image: reptileImage,
       description: 'Fascinating scaled companions for the exotic pet enthusiast.',
       icon: '🦎'
     },
@@ -231,7 +231,7 @@ const AvailablePets = () => {
         gender: 'Female',
         breed: 'Cockatiel',
         description: 'Friendly and social bird who enjoys human interaction and learning tricks.',
-        image: 'https://images.unsplash.com/photo-1604832388091-d2faa74826a4?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
+        image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Nymphicus_hollandicus_-pet_-grey_colour_mutation-8a.jpg/960px-Nymphicus_hollandicus_-pet_-grey_colour_mutation-8a.jpg',
         status: 'Available'
       }
     ],
@@ -243,7 +243,7 @@ const AvailablePets = () => {
         gender: 'Male',
         breed: 'Bearded Dragon',
         description: 'Gentle reptile with lots of personality who enjoys basking and being handled.',
-        image: 'https://images.unsplash.com/photo-1591389703635-e15a07609b28?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
+        image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Bartagame_%28fcm%29.jpg/960px-Bartagame_%28fcm%29.jpg',
         status: 'Available'
       },
       {

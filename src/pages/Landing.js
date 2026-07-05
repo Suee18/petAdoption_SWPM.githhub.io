@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useCallback } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import './Landing.css';
 import petid from '../media/LandingPage/petid.png';
@@ -12,6 +13,7 @@ import donation from '../media/LandingPage/donation.png';
 import pawImage from '../media/LandingPage/paw1.png';
 
 const Landing = () => {
+  const navigate = useNavigate();
   // State for paw animation management
   const [pawsArray, setPawsArray] = useState([]);
   const [shouldAnimate, setShouldAnimate] = useState(true);
@@ -303,7 +305,7 @@ const Landing = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.7 }}
           >
-            <h3 className='column-header'>For Shelters</h3>
+            <h3 className='column-header'>For Pet Adopters</h3>
             <div className="feature-cards">
               {features.users.map((feature, index) => (
                 <motion.div
@@ -340,7 +342,7 @@ const Landing = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.7 }}
           >
-            <h3 className='column-header'>For Pet Adopters</h3>
+            <h3 className='column-header'>For Shelters</h3>
             <div className="feature-cards">
               {features.shelters.map((feature, index) => (
                 <motion.div
@@ -392,7 +394,7 @@ const Landing = () => {
           },
           tap: { scale: 0.97 }
         }}
-        onClick={() => window.location.href = '/available-pets'}
+        onClick={() => navigate('/available-pets')}
       >
         <motion.span 
           className="button-text"
@@ -431,7 +433,7 @@ const Landing = () => {
           },
           tap: { scale: 0.97 }
         }}
-        onClick={() => window.location.href = '/register-shelter'}
+        onClick={() => navigate('/register-shelter')}
       >
         <motion.span 
           className="button-text"

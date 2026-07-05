@@ -67,9 +67,9 @@ const LoggedInNavbar = () => {
           )}
           
           <li className="nav-item">
-            <a href="/" className="nav-links" onClick={handleLogout}>
+            <Link to="/" className="nav-links" onClick={handleLogout}>
               Log Out
-            </a>
+            </Link>
           </li>
         </ul>
       </div>

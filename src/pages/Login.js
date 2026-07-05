@@ -1,10 +1,11 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { motion } from 'framer-motion';
 import './Pages.css';
 import dogImage from '../assets/images/dog-please-adopt-me-fb.jpg';
 
 export default function Login({ onLogin }) {
+  const navigate = useNavigate();
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
@@ -52,9 +53,9 @@ export default function Login({ onLogin }) {
       
       // Redirect to appropriate dashboard based on role
       if (user.role === 'shelter') {
-        window.location.href = '/shelter-dashboard';
+        navigate('/shelter-dashboard');
       } else {
-        window.location.href = '/profile';
+        navigate('/profile');
       }
       
       setLoading(false);

@@ -1,10 +1,11 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { motion } from 'framer-motion';
 import './Pages.css';
 import dogImage from '../assets/images/dog-please-adopt-me-fb.jpg';
 
 export default function SignUp() {
+  const navigate = useNavigate();
   const [formData, setFormData] = useState({
     userName: '',
     email: '',
@@ -69,7 +70,7 @@ export default function SignUp() {
       console.log('Form submitted:', formData);
       setLoading(false);
       // Redirect to login
-      window.location.href = '/login';
+      navigate('/login');
     }, 1500);
   };
 

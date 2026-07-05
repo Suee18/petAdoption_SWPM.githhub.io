@@ -1,12 +1,11 @@
 {
   "files": {
     "main.css": "/petAdoption_SWPM.githhub.io/static/css/main.47292974.css",
-    "main.js": "/petAdoption_SWPM.githhub.io/static/js/main.e7e9d6dc.js",
+    "main.js": "/petAdoption_SWPM.githhub.io/static/js/main.1cbcdcc2.js",
     "static/js/453.2ff65412.chunk.js": "/petAdoption_SWPM.githhub.io/static/js/453.2ff65412.chunk.js",
     "static/media/dog-please-adopt-me-fb.jpg": "/petAdoption_SWPM.githhub.io/static/media/dog-please-adopt-me-fb.a83d15da608bebdf5b31.jpg",
     "static/media/chat.png": "/petAdoption_SWPM.githhub.io/static/media/chat.53f86c9881ab3058ac1c.png",
     "static/media/pets.png": "/petAdoption_SWPM.githhub.io/static/media/pets.339aa9dab01aef3379d4.png",
-    "static/media/parallaxBG.jpg": "/petAdoption_SWPM.githhub.io/static/media/parallaxBG.1f8645860bcad180cdaa.jpg",
     "static/media/petsearchicon.png": "/petAdoption_SWPM.githhub.io/static/media/petsearchicon.e6e9f00356099c14d552.png",
     "static/media/petid.png": "/petAdoption_SWPM.githhub.io/static/media/petid.7fdc41d16a98b28e47a8.png",
     "static/media/donation.png": "/petAdoption_SWPM.githhub.io/static/media/donation.f54c5b8b7dac24dc32da.png",
@@ -16,11 +15,11 @@
     "static/media/paw1.png": "/petAdoption_SWPM.githhub.io/static/media/paw1.24d88bdc2b0861898ec2.png",
     "index.html": "/petAdoption_SWPM.githhub.io/index.html",
     "main.47292974.css.map": "/petAdoption_SWPM.githhub.io/static/css/main.47292974.css.map",
-    "main.e7e9d6dc.js.map": "/petAdoption_SWPM.githhub.io/static/js/main.e7e9d6dc.js.map",
+    "main.1cbcdcc2.js.map": "/petAdoption_SWPM.githhub.io/static/js/main.1cbcdcc2.js.map",
     "453.2ff65412.chunk.js.map": "/petAdoption_SWPM.githhub.io/static/js/453.2ff65412.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.47292974.css",
-    "static/js/main.e7e9d6dc.js"
+    "static/js/main.1cbcdcc2.js"
   ]
 }

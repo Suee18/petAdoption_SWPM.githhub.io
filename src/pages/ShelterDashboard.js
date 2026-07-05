@@ -1,5 +1,6 @@
 // src/pages/ShelterDashboard.js
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import './ShelterDashboard.css';
 
@@ -10,6 +11,7 @@ import donationIcon from '../media/LandingPage/donation.png';
 import chatIcon from '../media/LandingPage/chat.png';
 
 const ShelterDashboard = () => {
+  const navigate = useNavigate();
   // Mock shelter data (in a real app, this would come from an API or context)
   const [shelter, setShelter] = useState({
     id: 'sh-123456',
@@ -480,7 +482,7 @@ const ShelterDashboard = () => {
         </button>
         <button 
           className={`tab-button inbox-button`}
-          onClick={() => window.location.href = '/inbox'}
+          onClick={() => navigate('/inbox')}
         >
           <img src={chatIcon} alt="" className="tab-icon" />
           Inbox
@@ -978,7 +980,7 @@ const ShelterDashboard = () => {
                               )}
                               <button
                                 className="btn-chat"
-                                onClick={() => window.location.href = `/inbox?user=${request.requestedBy}`}
+                                onClick={() => navigate('/inbox')}
                                 title="Chat with the requester"
                               >
                                 <img src={chatIcon} alt="Chat" className="action-icon" />
