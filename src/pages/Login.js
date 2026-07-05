@@ -161,11 +161,35 @@ export default function Login({ onLogin }) {
               </motion.button>
             </motion.form>
             
-            <motion.div 
+            <motion.div
               className="auth-links"
               variants={itemVariants}
             >
               <p>Don't have an account? <Link to="/signup">Sign up</Link></p>
+            </motion.div>
+
+            <motion.div className="auth-demo-accounts" variants={itemVariants}>
+              <h4>Demo accounts — click one to fill the form</h4>
+              <div className="demo-account-list">
+                <button
+                  type="button"
+                  className="demo-account"
+                  onClick={() => { setUsername('user1'); setPassword('password1'); setError(''); }}
+                >
+                  <p className="demo-account-role">🐾 Pet Adopter</p>
+                  <p>Username: <strong>user1</strong></p>
+                  <p>Password: <strong>password1</strong></p>
+                </button>
+                <button
+                  type="button"
+                  className="demo-account"
+                  onClick={() => { setUsername('happypaws'); setPassword('shelter123'); setError(''); }}
+                >
+                  <p className="demo-account-role">🏠 Shelter</p>
+                  <p>Username: <strong>happypaws</strong></p>
+                  <p>Password: <strong>shelter123</strong></p>
+                </button>
+              </div>
             </motion.div>
           </div>
         </motion.div>

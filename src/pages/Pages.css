@@ -225,15 +225,41 @@
   text-align: center;
 }
 
+.demo-account-list {
+  display: flex;
+  gap: 0.75rem;
+}
+
 .demo-account {
+  flex: 1;
   background-color: var(--color-gray-50, #f8f9fa);
   padding: 0.75rem;
   border-radius: var(--radius-md, 6px);
   font-size: 0.875rem;
+  border: 1px solid var(--color-gray-200, #e9ecef);
+  text-align: left;
+  cursor: pointer;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.demo-account:hover {
+  border-color: var(--color-primary, #6c5f8d);
+  box-shadow: 0 2px 8px rgba(108, 95, 141, 0.15);
 }
 
 .demo-account p {
   margin: 0.25rem 0;
+}
+
+.demo-account-role {
+  font-weight: 600;
+  color: var(--color-primary, #6c5f8d);
+}
+
+@media (max-width: 480px) {
+  .demo-account-list {
+    flex-direction: column;
+  }
 }
 
 /* Sign Up specific styles */
